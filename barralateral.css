@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#bar {
+    position: fixed;
+    width: 175px;
+    top:  0px;
+    height:100%;
+    background-color: rgba(100,100,100, .3);
+    left: -175px;
+transition:all 500ms;
+}
+#bar.active {
+    left: 0px;
+}
+
+ 
+#bar > ul li a {
+	color:#fff;
+	display:block;
+	line-height:15px;
+	padding: 15px 10px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+    border-bottom:1px solid rgba(100,100,100, .3);
+}
+.logo {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+#bar .toggle-btn{
+    position: absolute;
+    left: 175px;
+    top: 300px;
+    cursor: pointer;
+}
+#bar .toggle-btn span {
+    display: block;
+    width: 25px;
+    text-align: center;
+    font-size:30px;
+    border:  0px solid #000;
+}
+

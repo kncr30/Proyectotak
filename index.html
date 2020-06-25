@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+<head>
+    <!--CHAMORRO-->
+    <!--preloading--> 
+    <head>  
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="preloader.css">
+    </head>
+        <body>
+            <div id="loader"></div>
+        </body>
+    </head>
+        <script type="text/javascript">
+        var loader;
+    function loadNow(opacity){
+        if (opacity <=0) 
+        {
+            displayContent();
+        }
+   else
+        { 
+       loader.style.opacity = opacity;
+       window.setTimeout(function()
+        {
+           loadNow(opacity - 0.05)
+       }, 100);
+   }
+}
+    function displayContent()
+        {
+        loader.style.display= 'none';
+        document.getElementByid('content'),style.display= 'block';
+        }
+        document.addEventListener("DOMContentLoaded", function()
+        {
+        loader = document.getElementById('loader');
+        loadNow(1.7);
+        });
+        </script>
+        </body>
+        </html>
+<!--preloading--> 
+        
+
+<!--scroll bar-->
+<link rel="stylesheet" href="scroll.css">
+<!--scroll bar-->
+
+
+<!--barras--> 
+    <div align="center"><img src="Imagenes/7.jpg" width="100" height="10"></div>
+    <div align="center"><img src="Imagenes/7.jpg" width="150" height="10"></div>
+    <div align="center"><img src="Imagenes/7.jpg" width="200" height="10"></div>
+<!--barras--> 
+
+
+<!--imagen titular--> 
+    <center>  
+        <table background="Imagenes/8.jpg" cellspacing=0 cellspadding=0 border=1  WIDTH="250"  HEIGHT="30">
+    </center> 
+        <tr>
+            <th>
+               <font size="5">  NoticiasWorld 
+            </th>
+       </tr>
+    </table>
+<!--imagen titular--> 
+
+
+<!--menu desplegable--> 
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="icono.css">
+        <body>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><span class="primero"><i class="icon icon-home3"> </i> </span>INICIO</a>
+                            <ul>
+                                <li><a href="index.html">INICIO</a> </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#"><span class="segundo"><i class="icon icon-newspaper"> </i> </span>NOTICIAS</a> 
+                    <ul>
+                        <li><a href="Noticias.html">Noticias</a> </li>
+                        <li><a href="Novedad.html">Novedad</a> </li>
+                        <li><a href="Informacion.html">Informacion</a> </li>
+                        <li><a href="Estadistica.html">Estadistica</a> </li>
+                    </ul>
+                        </li>
+                            <li><a href="#"><span class="tercero"><i class="icon icon-film"> </i> </span>ENTRETENIMINETO</a>
+                    <ul>
+                        <li><a href="Videos.html">Videos</a> </li>
+                         <li>  <a href="Musica.html">Musica</a> </li>
+                   </ul>
+                        </li>
+                        <li><a href="#"><span class="cuarto"><i class="icon icon-image"> </i> </span>GALERIA</a>
+                    <ul>
+                        <li><a href="wallpaper.html">Wallpaper</a> </li>
+                        <li><a href="Imagenes.html">Imagenes</a> </li>
+                    </ul>
+                        </li>
+                        <li><a href="#"><span class="quinto"><i class="icon icon-folder-plus"> </i> </span>Mas...</a> 
+                    <ul>
+                        <li><a href="Mensaje.html">Mensaje</a> </li>
+                        <li><a href="Referencias.html">Referencias</a> </li>
+                    </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+    
+        </body>
+<!--menu desplegable--> 
+
+
+<!--carrusel-->
+    <html lang="en">
+    <head>
+
+        <link rel="stylesheet" href="carrusel.css">
+        <link rel="stylesheet" href="icono.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="slides">
+                    <img style="border: 5px solid; color: black;" src="imagenes/1.jpg" alt="" width="800" height="400" />
+                    <img style="border: 5px solid; color: black;" src="imagenes/2.jpg" alt="" width="800" height="400" />
+                    <img style="border: 5px solid; color: black;" src="imagenes/3.jpeg" alt="" width="800" height="400" />
+                    <img style="border: 5px solid; color: black;" src="imagenes/4.jpg" alt="" width="800" height="400" />          
+                    <img style="border: 5px solid; color: black;" src="imagenes/5.jpg" alt="" width="800" height="400" />
+                    <img style="border: 5px solid; color: black;" src="imagenes/6.jpg" alt="" width="800" height="400" />
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.slides.js"></script>
+        <script>
+
+    $(function(){
+    $(".slides").slidesjs({
+    play: {
+      active: true,
+      effect: "slide",
+      interval: 2000,
+      auto: true,
+      swap: true,
+      pauseOnHover: false,
+      restartDelay: 2500
+            }
+        });
+    });
+        </script>
+  
+    </body>
+    </html>
+<!--carrusel-->
+
+
+<!--redes-->
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="redes.css">
+        <link rel="stylesheet" href="icono.css">
+    </head>
+        <body>
+            <div class="social">
+                    <ul>
+                    <li><a href="http://facebook.com" target="_black" class="icon-facebook"></a> </li>
+                    <li><a href="https://www.spotify.com/ec/" target="_black" class="icon-music"></a> </li>
+                    <li><a href="https://www.youtube.com/channel/UCvuF5cqSY0eKyXOT44BWBZQ" target="_black" class="icon-play"></a> </li>
+                    <li><a href="https://soundcloud.com/user-267371646" target="_black" class="icon-soundcloud"></a> </li>
+                 <li><a href="mailto:contacto@nicolaychamorro.com"  class="icon-envelop"></a> </li>
+                   </ul>
+               </div>       
+           </body>
+<!--redes-->
+
+
+<!--salto de linea-->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+<!--salto de linea-->
+
+
+<!--fondo-->
+    <head>
+        <meta charset="UTF-8">
+            <link rel="stylesheet" href="fondo.css">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                <script src="fondo.js"></script>
+    </head>
+        <body>
+            <div class="contenedor">
+        <article>
+<!--fondo-->
+
+          
+<!-- slato de linea-->
+            <br>
+            <br>
+            <br>
+            <br>
+<!-- slato de linea-->
+
+
+<!-- musica de fondo-->
+<audio  autoplay src="FONDO.mp3"   controls></audio>
+<!-- musica de fondo-->
+
+
+<!-- slato de linea-->
+            <br>
+            <br>
+            <br>
+<!-- slato de linea-->
+
+
+<!--BOTON SECCION NOTICIAS--------------->
+    <center>  
+        <table background="imagenes/fondo.jpg" cellspacing=0 cellspadding=0 border=3  WIDTH="250"  HEIGHT="50">
+    </center> 
+        <tr>
+        <th>
+          
+                <a name="Noti"></a>
+                <a href="#cia"> 
+                <FONT SIZE=4 COLOR="black">SECCION NOTICIA </FONT>  
+                
+
+                <STYLE>A {text-decoration: none;} </STYLE>
+                </a>
+        </th>
+        </tr>
+        </table>
+<!--BOTON SECCION NOTICIAS--------------->
+
+
+<!-- slato de linea-->
+    <BR>   
+<!-- slato de linea-->
+
+
+<!--BOTON SECCION Novedades--------------->
+        <center>  
+            <table background="imagenes/fondo.jpg" cellspacing=0 cellspadding=0 border=3  WIDTH="250"  HEIGHT="50">
+        </center> 
+         <tr>
+         <th>
+    
+                <a name="Nov"></a>
+                <a href="#edad"> 
+                <FONT SIZE=4 COLOR="black">SECCION NOVEDAD </FONT> 
+                <STYLE>A {text-decoration: none;} </STYLE>
+                </a>
+        </th>
+        </tr>
+        </table>
+<!--BOTON SECCION Novedades--------------->
+    
+<!-- slato de linea-->
+    <BR>   
+<!-- slato de linea-->
+
+    
+<!--BOTON SECCION INFORMACION--------------->
+    <center>  
+        <table background="imagenes/fondo.jpg" cellspacing=0 cellspadding=0 border=3  WIDTH="250"  HEIGHT="50">
+    </center> 
+        <tr>
+        <th>
+                <a name="arriba"></a>
+                <a href="#abajo"> 
+                <FONT SIZE=3.5 COLOR="black">SECCION INFORMACION </FONT>
+                <STYLE>A {text-decoration: none;} </STYLE> 
+               </a>
+        </th>
+        </tr>
+        </table>
+<!--BOTON SECCION INFORMACION--------------->
+
+
+<!-- slato de linea-->
+    <BR>   
+<!-- slato de linea-->
+
+    
+<!--BOTON SECCION estadistica--------------->
+    <center>  
+        <table background="imagenes/fondo.jpg" cellspacing=0 cellspadding=0 border=3  WIDTH="250"  HEIGHT="50">
+    </center> 
+         <tr>
+         <th>
+           
+               <a name="estad"></a>
+               <a href="#istica"> 
+               <FONT SIZE=4 COLOR="black">SECCION ESTADISTICA</FONT> 
+               <STYLE>A {text-decoration: none;} </STYLE>
+               </a>
+        </th>
+        </tr>
+        </table>
+<!--BOTON SECCION Estadistica--------------->
+
+
+<!--CONTENEDOR DE TEXTO-->
+    <head>
+        <meta charset="UTF-8">
+            <link rel="stylesheet" href="texto.css">
+            <meta name="viewport" content="wridth=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scle=1.0">
+    </head>
+        <body> 
+            <div class="container-all">
+
+                
+<!--SECCION NOTICIA-->
+               <a href="#Noti"></a>
+               <a name="cia"></a>
+               </body>
+<!--SECCION NOTICIA-->    
+
+
+<!-- slato de linea-->
+    <BR>   
+    <BR>
+<!-- slato de linea-->
+    
+            
+               <h5 class="tile"> <a href="Noticias.html" text-decoration: overline style="color:#3d210e">NOTICIAS</h5>
+               <p>&nbsp;</p>
+               <p>&nbsp;</p>    
+               <a href="articulo1-noticias.html"> <img src="IMAGENES/NOTICIA/1.jpg" alt=""> 
+               <h1 class="sup-title:"><a href="articulo1-noticias.html" text-decoration: overline style="color:#000000"> <u>MUERE EL PREFECTO DE GUAYAS </u> </a></h1>
+               <p style="text-align:justify;">
+                (CNN Español) — En medio de denuncias por presuntos hechos de corrupción, el prefecto de la provincia de Guayas en Ecuador
+                y exarquero del equipo Barcelona Sporting Club de Guayaquil, Carlos Luis Morales, falleció este lunes a causa de un “infarto
+                fulminante”, según...
+              </p>
+
+
+<!-- slato de linea-->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>  
+<!-- slato de linea-->
+        
+              
+               <a href="articulo2-noticias.html"> <img src="IMAGENES/NOTICIA/2.jpg" alt=""> 
+               <h1 class="sup-title:"><a href="articulo2-noticias.html" text-decoration: overline style="color:#000000"> <u>Alerta de tsunami para Ecuador </u> </a></h1>
+               <p style="text-align:justify;">
+                El Instituto Oceanográfico de la Armada del Ecuador (Inocar) advirtió en primera instancia que el sismo 
+                ocurrido en el sur de México este martes podría ocasionar un tsunami que llegara hasta las costas del 
+                Ecuador...
+              </p>
+
+
+<!-- slato de linea-->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>  
+<!-- slato de linea-->
+        
+
+              <a href="articulo3-noticias.html"> <img src="IMAGENES/NOTICIA/3.jpeg" alt=""> 
+               <h1 class="sup-title:"><a href="articulo3-noticias.html" text-decoration: overline style="color:#000000"> <u>El Papa dona dos respiradores</u> </a></h1>
+               <p style="text-align:justify;">
+                En los próximos días se esperan dos máquinas destinadas a los hospitales que están trabajando en primera 
+                línea para contrarrestar la propagación de la epidemia.
+                El Papa Francisco donó dos respiradores a Ecuador para hacer frente a la pandemia de coronavirus...
+               
+              </p>
+
+
+
+<!--SECCION NOVEDAD-->
+                <a href="#Nov"></a>
+                <a name="edad"></a>
+                </body>
+<!--SECCION NOVEDAD-->
+
+
+<!--SALTO DE linea-->
+        <br>
+        <br>
+<!--SALTO DE linea-->
+                 
+                <h5 class="tile"><a href="Novedad.html" text-decoration: overline style="color:#3d210e"> Novedades</h5>
+
+
+<!-- slato de linea-->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>  
+<!-- slato de linea-->
+        
+                    
+                <a href="articulo1-Novedades.html"> <img src="IMAGENES/NOVEDADES/1.jpg" alt=""> 
+                <h1 class="sup-title:"> <a href="articulo1-Novedades.html" text-decoration: overline style="color:#000000"> <u>Pacientes que superaron el covid</u> </a></h1>
+                <p style="text-align:justify;">
+                    En Ecuador se registran 5120 pacientes recuperados de coronavirus COVID-19, 
+                    sin embargo, esto no significa que deban dejar los cuidados.
+                    En el mundo la enfermedad se ha manifestado de diferentes maneras, 
+                    algunos tuvieron síntomas leves y otros más graves. En varios casos los ciudadanos no supieron
+                    que tenían el virus y este solo...
+               </p>
+
+<!-- slato de linea-->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>  
+<!-- slato de linea-->
+        
+
+                <a href="articulo2-Novedades.html"> <img src="IMAGENES/NOVEDADES/2.jpg" alt=""> 
+                <h1 class="sup-title:"> <a href="articulo2-Novedades.html" text-decoration: overline style="color:#000000"> <u>Precauciones para evitar el Covid-19 </u> </a></h1>
+                <p style="text-align:justify;">
+                    ¿Qué debemos hacer en casa?
+                    <br>
+                    <br>
+                    Para proteger a otros en el hogar, una persona que está enferma debe hacer lo siguiente:
+                    <br>
+                    En la medida de lo posible, mantenerse alejado de otras...
+               </p>
+
+<!-- slato de linea-->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>  
+<!-- slato de linea-->
+        
+
+               <a href="articulo3-Novedades.html"> <img src="IMAGENES/NOVEDADES/3.jpg" alt="">  
+                <h1 class="sup-title:"> <a href="articulo3-Novedades.html" text-decoration: overline style="color:#000000"> <u>Desinfectantes Casero Son Nocivos</u> </a></h1>
+                <p style="text-align:justify;">
+                    Remedios caseros para la limpieza y desinfección
+                    <br>
+                    Los desinfectantes industriales pueden ser perjudiciales para tu salud. 
+                    Te mostramos cómo hacer desinfectante casero para limpiar tus manos, tu ropa o tu hogar.
+               </p>
+
+               
+<!--SECCION INFORMACION-->
+                <a href="#arriba"></a>
+                <a name="abajo"></a>
+                </body>
+<!--SECCION INFORMACION-->
+
+
+<!--SALTO DE linea-->
+        <br>
+        <br>
+<!--SALTO DE linea-->
+
+                  
+                <h5 class="tile"> <a href="Informacion.html" text-decoration: overline style="color:#3d210e"> INFORMACION </h5>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <a href="articulo1-Informacion.html"> <img src="IMAGENES/INFORMACION/1.jpg" alt="">
+                <h1 class="sup-title:"><a href="articulo1-Informacion.html" text-decoration: overline style="color:#000000"> <u>¿QUE ES EL CORONAVIRUS? </u> </a></h1>
+                <p style="text-align:justify;">
+                    Los coronavirus son una extensa familia de virus que pueden causar enfermedades tanto en animales como en humanos. 
+                    En los humanos, se sabe que varios coronavirus causan infecciones respiratorias que pueden ir desde el resfriado
+                    común hasta enfermedades más...
+               </p>
+
+<!-- slato de linea-->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>  
+<!-- slato de linea-->
+        
+               <a href="articulo2-Informacion.html"> <img src="IMAGENES/INFORMACION/3.png" alt=""> 
+                <h1 class="sup-title:"><a href="articulo2-Informacion.html" text-decoration: overline style="color:#000000"> <u>¿QUE ES EL COVID-19? </u> </a></h1>
+                <p style="text-align:justify;">
+                    El Director General de la Organización Mundial de la Salud (OMS), el doctor Tedros Adhanom Ghebreyesus,
+                    anunció el 11 de marzo de 2020 que la nueva enfermedad por el coronavirus 2019 (COVID-19) puede 
+                    caracterizarse como una pandemia...
+                </p>
+
+<!-- slato de linea-->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>  
+<!-- slato de linea-->
+        
+
+                <a href="articulo3-Informacion.html"> <img src="IMAGENES/INFORMACION/4.jpg" alt=""> 
+                <h1 class="sup-title:"><a href="articulo3-Informacion.html" text-decoration: overline style="color:#000000"> <u>COVID-19 LLEGA A ECUADOR </u> </a></h1>
+                <p style="text-align:justify;">
+                    Cerca de la destrucción total, las grandes razas del mundo se enfrentaron en una colosal 
+                    batalla contra un espíritu que poseía esencia lunar, su poder era tan grande que era capaz
+                    de destruirlo todo, surgió una guerra interminable que tomó una excesiva cantidad de vidas..
+               </p>
+
+<!--SECCION ESTADISTIC-->
+                <a href="#estad"></a>
+                <a name="istica"></a>
+                </body>
+<!--SECCION ESTADISTICA-->  
+
+
+<!--SALTO DE linea-->
+        <br>
+        <br>
+<!--SALTO DE linea-->
+
+         
+                <h5 class="tile"> <a href="Estadistica.html" text-decoration: overline style="color:#3d210e"> Estadistica </h5>
+              
+               
+<!-- slato de linea-->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>  
+<!-- slato de linea-->
+        
+               
+                <a href="articulo1-Estadisticas.html"> <img src="IMAGENES/GRAFICAS FALLECIDOS/20.png" alt=""> 
+                <h1 class="sup-title:"><a href="articulo1-Estadisticas.html" text-decoration: overline style="color:#000000"> <u> Fallecidos en Tungurahua "Abril"</u> </a></h1>
+                <p style="text-align:justify;">
+                    Cerca de la destrucción total, las grandes razas del mundo se enfrentaron en una colosal 
+                    batalla contra un espíritu que poseía esencia lunar, su poder era tan grande que era capaz
+                    de destruirlo todo, surgió una guerra interminable que tomó una excesiva cantidad de vidas..
+               </p>
+ 
+<!-- slato de linea-->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>  
+<!-- slato de linea-->
+        
+
+               <a href="articulo2-Estadisticas.html"> <img src="IMAGENES/GRAFICAS INFECTADOS/29.png" alt=""> 
+                <h1 class="sup-title:"><a href="articulo2-Estadisticas.html" text-decoration: overline style="color:#000000"> <u>Covid-19 en Tungurahua "Abril"</u> </a></h1>
+                <p style="text-align:justify;">
+                    Cerca de la destrucción total, las grandes razas del mundo se enfrentaron en una colosal 
+                    batalla contra un espíritu que poseía esencia lunar, su poder era tan grande que era capaz
+                    de destruirlo todo, surgió una guerra interminable que tomó una excesiva cantidad de vidas..
+               </p>
+
+
+<!--SALTO DE linea-->
+        <br>
+        <br>
+<!--SALTO DE linea-->
+
+
+    </div>
+        </body>
+    </html>
+<!--CONTENEDOR DE TEXTO-->
+
+
+     </article>
+        </div>
+    </body>
+<!--FONDO-->    
+
+
+
+<!--barra lateral-->
+    <html lang="en" dir="ltr">
+        <head>
+            <meta charset="utf-8">
+         <link rel="stylesheet" href="barralateral.css">
+        </head>
+    <body>
+ 
+        <div id="bar">
+            <div class="toggle-btn">
+                <span>
+                    <img src="IMAGENES/10.png" width="55" height="55" />
+                </span>
+            </div>
+            
+            <ul>
+        <li>
+            <img src="gif2.gif" width="130" height="100" />
+        </li>
+                <li><a href="Autor.html"></i> </span>AUTOR</a>
+                <li><a href="Ayuda.html"></i> </span>AYUDA</a>
+        </div>
+         <script src="barralateral.js" charset="utf-8"></script>
+    </body>
+    </html>
+ <!--barra lateral-->
+
+
+ <!--salto de linea-->
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+<!--salto de linea-->
+
+
+<!--pie de pagina-->
+     <link rel="stylesheet" href="pie.css">
+        </body>
+            <footer>
+                <p>Derechos Reservados &copy; 2020 </p>
+                <p>Diseñado por: Nicolay Chamorro</p>
+            </footer>
+        </body>
+<!--pie de pagina-->
+
+
+
+<!--AUTOR: KEVIN NICOLAY CHAMORRO ROBALINO: 3RO A INFORMATICA. 18 AÑOS-->

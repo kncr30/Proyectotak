@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.container-all {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding:60px;
+    margin-top: 60px;
+    border-top: 10px solid #a34915b7;
+    background-color: rgba(114, 70, 41, .3);
+    
+}
+.container-all h5 {
+    font-size: 250%;
+    text-align: left;
+}
+
+.title{
+    text-align: left;
+    font-size:  40px;
+    margin-bottom: 60px;
+    
+    
+}
+.sup-title{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+.container-all p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top:20px;
+}
+

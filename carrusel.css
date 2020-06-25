@@ -1,0 +1,45 @@
+* {
+    margin:0;
+    padding:0;
+}
+.main {
+    width: 90%;
+    max-width:800px;
+    margin: -55px auto;
+}
+.slides {
+    width: 100%;
+}
+.slides img {
+    width: 100%;
+}
+.slidesjs-pagination {
+    background-color: rgb(71, 22, 19);
+    list-style:none;
+    overflow: hidden;
+}
+.slidesjs-pagination li {
+    float: left;
+}
+.slidesjs-pagination li a {
+    display: block;
+    padding: 9px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.slidesjs-pagination li a:hover {
+    background:rgb(0, 0, 0);
+
+}
+.slides .active {
+    background-color: rgb(114, 70, 41);
+}
+.slidesjs-navigation {
+    background-color: rgb(114, 70, 41);
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    padding:11px 20px;
+    float:right;
+}
